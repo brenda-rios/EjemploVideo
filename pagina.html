@@ -1,0 +1,220 @@
+```python
+html_content = """<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           Variables y Configuración General
+           ========================================================================== */
+        :root {
+            --bg-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --accent-color: #3498db;
+            --accent-hover: #2980b9;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background: var(--bg-gradient);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-primary);
+        }
+
+        /* ==========================================================================
+           Componente: Tarjeta de Bienvenida
+           ========================================================================== */
+        .welcome-container {
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .welcome-card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto sutil al pasar el mouse sobre la tarjeta */
+        .welcome-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .welcome-card h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .welcome-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Botón de Acción */
+        .btn-action {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 32px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background-color: var(--accent-hover);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="welcome-container">
+        <div class="welcome-card">
+            <h1>¡Bienvenidos!</h1>
+            <p>Nos alegra mucho tenerte aquí. Explora, descubre y disfruta de nuestro espacio digital.</p>
+            <a href="#" class="btn-action">Comenzar</a>
+        </div>
+    </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           Variables y Configuración General
+           ========================================================================== */
+        :root {
+            --bg-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --accent-color: #3498db;
+            --accent-hover: #2980b9;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background: var(--bg-gradient);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-primary);
+        }
+
+        /* ==========================================================================
+           Componente: Tarjeta de Bienvenida
+           ========================================================================== */
+        .welcome-container {
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .welcome-card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto sutil al pasar el mouse sobre la tarjeta */
+        .welcome-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .welcome-card h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .welcome-card p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Botón de Acción */
+        .btn-action {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 32px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background-color: var(--accent-hover);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="welcome-container">
+        <div class="welcome-card">
+            <h1>¡Bienvenidos!</h1>
+            <p>Nos alegra mucho tenerte aquí. Explora, descubre y disfruta de nuestro espacio digital.</p>
+            <a href="#" class="btn-action">Comenzar</a>
+        </div>
+    </main>
+
+</body>
+</html>
+
+```
